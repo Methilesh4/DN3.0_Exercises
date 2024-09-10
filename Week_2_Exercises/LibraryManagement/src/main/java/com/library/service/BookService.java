@@ -9,5 +9,7 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
-    // Service methods that use bookRepository
+     public void addBook(String bookName) {
+        bookRepository.save(bookName);
+    }
 }
